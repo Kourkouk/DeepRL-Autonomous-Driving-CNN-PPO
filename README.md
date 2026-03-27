@@ -18,7 +18,7 @@ The autonomous driving system is structurally divided into two main subsystems:
 ## Training & Results
 Through extensive grid search (evaluating learning rates, network depth, and feature dimensions) , the final model was trained for 500,000 timesteps. To prevent "reward hacking" (such as continuous drifting to avoid crashes) and policy collapse in the late training stages, an `EvalCallback` routine was introduced. 
 
-This allowed the system to save the model at its absolute peak performance, achieving a high score of **~880**.
+This allowed the system to save the model at its absolute peak performance, achieving a high score of **~880**(best_model.zip).
 
 ## Technologies & Libraries Used
 * **Python** (IDE: PyCharm)
