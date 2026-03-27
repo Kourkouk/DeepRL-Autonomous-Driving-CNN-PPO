@@ -12,7 +12,7 @@ The solution leverages a combination of Deep Learning (DL) for visual perception
 
 ## Architecture
 The autonomous driving system is structurally divided into two main subsystems:
-1. **Perception (Vision) - Custom CNN:** A custom 3-layer Convolutional Neural Network acts as a feature extractor. It uses an aggressive downsampling strategy to compress the spatial and temporal information into a tiny 3x3 grid. This is then flattened and passed through a fully connected layer with 256 neurons, forcing the network to discard environmental noise and retain only essential driving features[cite: 98, 99].
+1. **Perception (Vision) - Custom CNN:** A custom 3-layer Convolutional Neural Network acts as a feature extractor. It uses an aggressive downsampling strategy to compress the spatial and temporal information into a tiny 3x3 grid. This is then flattened and passed through a fully connected layer with 256 neurons, forcing the network to discard environmental noise and retain only essential driving features.
 2. **Decision Making (Brain) - PPO:** The extracted 256-feature vector is fed into the state-of-the-art **Proximal Policy Optimization (PPO)** algorithm. Built on an Actor-Critic architecture , the PPO was configured with strict clipping (`clip_range = 0.15`), an entropy coefficient (`ent_coef = 0.01`) to encourage exploration, and a linear learning rate schedule for optimal convergence.
 
 ## Training & Results
