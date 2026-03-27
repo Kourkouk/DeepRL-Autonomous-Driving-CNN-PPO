@@ -28,7 +28,6 @@ Through extensive grid search (evaluating learning rates, network depth, and fea
 * **TensorBoard** (for tracking metrics and visualizing training curves)
 
 ## Project Structure
-* `test_model_PPO.py` / `test_agent_PPO.py`: Scripts used during the testing phase (Grid Search) for hyperparameter tuning.
 * `Final_model/`: Directory containing the optimized final code.
   * `model_final_PPO.py`: The final optimal network architecture.
   * `agent_final_PPO.py`: Script for the final 500k-step training process.
